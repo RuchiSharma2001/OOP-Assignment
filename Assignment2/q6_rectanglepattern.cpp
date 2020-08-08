@@ -12,7 +12,7 @@ class rectangle{
         perimetercharacter=ch2;
     }
     public:
-    int set(int n1,int n2,int n3,int n4,int n5,int n6,int n7,int n8){
+    void set(int n1,int n2,int n3,int n4,int n5,int n6,int n7,int n8){
         if(n1>=0&&n2>=0&&n3>=0&&n4>=0&&n5>=0&&n6>=0&&n7>=0&&n8>=0){
             cout<<"Rectangle is in first quadrant"<<endl;
         }
@@ -27,7 +27,7 @@ class rectangle{
     }
     
     rectangle(int n1,int n2,int n3,int n4,int n5,int n6,int n7,int n8){
-        int x=set(n1,n2,n3,n4,n5,n6,n7,n8);
+        set(n1,n2,n3,n4,n5,n6,n7,n8);
             
     }
     void display(){
@@ -46,7 +46,6 @@ class rectangle{
     };
 int main(){
    char ch1,ch2;
-   int l,b;
    int n1,n2,n3,n4,n5,n6,n7,n8;
         cout<<"Enter first coordinate: ";
         cin>>n1;
